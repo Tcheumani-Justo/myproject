@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTOSHOP-REGISTRATION</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/vs.10.0/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+
+    <div class="wrapper">
+        <span class="bg-animate">
+            
+        </span>
+        
+        <div class="form-box login">
+            <h2>Login</h2>
+            <div class="close-page">
+                <i class="bx bxs-cross"></i>
+                <!-- <p>he</p> -->
+            </div>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" required>
+                    <label for="UserName">UserName</label>
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label for="Password">Password</label>
+                    <i class="bx bxs-lock-alt"></i>
+                    <!-- The eye for password -->
+                    <i class="bx bxs-eye"></i>
+                    
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="logreg-link">
+                    <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="info-text login"> -->
+            <!-- <h1 class="heading">Welcome to JUSTOSHOP</h1> -->
+            <!-- <p>The best websites to get best quality Goods at a cheaper price!</p> -->
+            <!-- <p><q>Your Satisfaction Is Our Pleasure </q></p> -->
+                
+        <!-- </div> -->
+    </div>
+
+    <!--
+    <div class="wrapper">
+        <div class="form-log"></div>
+        <h1 class="heading">Welcome to JUSTOSHOP</h1>
+        <h3>The best websites to get best quality Goods at a cheaper price!</h3>
+        <h4><q>Your Satisfaction Is Our Pleasure </q></h4>
+    
+    
+            <form action="#">
+            <div class="input-box">
+                <label for="">Name</label><input type="text"><br>
+            </div>
+            <div class="input-box">
+                <label for="">SurName</label><input type="text"><br>
+            </div>
+            <div class="input-box">
+                <label for="">Email</label><input type="email"><br>
+            </div>
+            <div class="input-box">
+                <label for="">Password</label><input type="password"><br>
+            </div>
+            <div class="input-box">
+                <label for="">Verified Password</label><input type="password">
+            </div>
+            </form>
+        
+    </div>
+</div> 
+-->
+<footer>visit our shops on justoshop@gmail.com </footer>
+</section>
+
+<script>
+    function ChangeBg(){
+        const images = [
+            'url("../images/f2.jpg")' ,
+            'url("../images/f3.jpg")' ,
+            'url("../images/f4.jpg")' ,
+            'url("../images/f5.jpg")' ,
+            'url("../images/f1.jpg")' 
+            
+        ]
+        const section = document.querySelector('section')
+        const bg = images[Math.floor(Math.random() * images.length)];
+        section.style.backgroundImage = bg;
+
+    }
+
+    setInterval(ChangeBg, 5000)
+</script>
+
+</body>
+</html>
